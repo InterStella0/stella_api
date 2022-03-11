@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     PORT: int = 8200
 
     POSTGRES_HOST: str = "localhost"
-    POSTGRES_PORT: int = 5656
+    POSTGRES_PORT: int = 5432
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
     POSTGRES_DATABASE: str
