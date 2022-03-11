@@ -1,2 +1,10 @@
+# main framework
+uvicorn
 fastapi
+pydantic[dotenv]
+
+# databases
 asyncpg
+
+# speedups
+uvloop

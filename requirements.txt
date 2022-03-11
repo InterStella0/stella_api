@@ -6,17 +6,31 @@
 #
 anyio==3.5.0
     # via starlette
+asgiref==3.5.0
+    # via uvicorn
 asyncpg==0.25.0
     # via -r requirements.in
+click==8.0.4
+    # via uvicorn
 fastapi==0.75.0
     # via -r requirements.in
+h11==0.13.0
+    # via uvicorn
 idna==3.3
     # via anyio
-pydantic==1.9.0
-    # via fastapi
+pydantic[dotenv]==1.9.0
+    # via
+    #   -r requirements.in
+    #   fastapi
+python-dotenv==0.19.2
+    # via pydantic
 sniffio==1.2.0
     # via anyio
 starlette==0.17.1
     # via fastapi
 typing-extensions==4.1.1
     # via pydantic
+uvicorn==0.17.5
+    # via -r requirements.in
+uvloop==0.16.0
+    # via -r requirements.in
