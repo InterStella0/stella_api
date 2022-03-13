@@ -3,6 +3,11 @@ import asyncpg
 from stella_api.settings import settings
 
 
+__all__ = (
+    'Database',
+)
+
+
 class Database:
     async def startup(self) -> None:
         self.pool = await asyncpg.create_pool(

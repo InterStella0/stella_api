@@ -1,8 +1,7 @@
 import logging
+from stella_api.core.models import StellaAPI
 
 import uvicorn
-
-from fastapi import FastAPI
 
 from .routes import setup_routes
 from .settings import settings
@@ -18,9 +17,7 @@ else:
 
 
 def main() -> None:
-    app = FastAPI(
-        title="Stella API",
-    )
+    app = StellaAPI()
     setup_routes(app)
 
     uvicorn.run(

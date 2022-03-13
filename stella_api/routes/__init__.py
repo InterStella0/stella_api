@@ -1,12 +1,9 @@
-from fastapi import APIRouter, FastAPI
+from stella_api.core.models import StellaAPI
+from stella_api.routes.v0 import V0Route
 
-from . import v0
 
 __all__ = ("setup_routes",)
 
-router = APIRouter()
-router.include_router(v0.router, prefix="/v0")
 
-
-def setup_routes(app: FastAPI) -> None:
-    app.include_router(router)
+def setup_routes(app: StellaAPI) -> None:
+    app.create_route(V0Route())
