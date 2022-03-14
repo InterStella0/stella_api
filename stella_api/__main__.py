@@ -1,7 +1,8 @@
 import logging
-from stella_api.core.models import StellaAPI
 
 import uvicorn
+
+from stella_api.core.models import StellaAPI
 
 from .routes import setup_routes
 from .settings import settings

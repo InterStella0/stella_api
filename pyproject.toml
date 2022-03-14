@@ -26,7 +26,8 @@ disallow_untyped_decorators = true
 no_implicit_optional = true
 warn_unused_ignores = true
 warn_return_any = true
-no_implicit_reexport = true
+# stella wants to use *
+no_implicit_reexport = false
 strict_equality = true
 
 [[tool.mypy.overrides]]

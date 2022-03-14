@@ -1,3 +1,3 @@
-from .app import *
-from .routes import *
-from .database import *
+from .app import *  # noqa
+from .database import *  # noqa
+from .routes import *  # noqa

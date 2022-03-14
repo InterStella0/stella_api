@@ -2,10 +2,7 @@ import asyncpg
 
 from stella_api.settings import settings
 
-
-__all__ = (
-    'Database',
-)
+__all__ = ("Database",)
 
 
 class Database:
