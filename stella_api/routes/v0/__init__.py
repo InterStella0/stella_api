@@ -13,4 +13,4 @@ class V0Route(RouteBase):
 
     def setup(self) -> None:
         self.add_router(funny.router, prefix="/funny", tags=["funny"])
-        self.add_router(ping.router, prefix="/ping", tags=["ping"])
+        self.add_router(ping.router, prefix="/ping", tags=["misc"])
